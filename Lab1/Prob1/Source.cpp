@@ -1,4 +1,4 @@
-#include <stdio.h>
+w#include <stdio.h>
 
 using namespace std;
 
@@ -7,7 +7,7 @@ int sumanr(char* line)
 	int s = 0;
 	int i = 0;
 
-	while (line[i] >= '0' and line[i] <= '9')
+	while (line[i] >= '0' && line[i] <= '9')
 	{
 		s = s * 10 + (line[i] - '0');
 		i++;
@@ -17,14 +17,14 @@ int sumanr(char* line)
 
 int main()
 {
-	FILE* file;
+	FILE* fisier;
 	int err;
 
-	err = fopen_s(&file, "in.txt", "r");
+	err = fopen_s(&fisier, "in.txt", "r");
 
 	if (err)
 	{
-		perror("Error opening file");
+		perror("Eroare la deschiderea fisierului");
 		return 1;
 	}
 
@@ -36,7 +36,7 @@ int main()
 		sum += sumanr(line);
 	}
 
-	fclose(file);
+	fclose(fisier);
 
 	printf("Suma numerelor este %d\n", sum);
 
