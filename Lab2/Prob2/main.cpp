@@ -8,12 +8,12 @@ int main()
 {
     Student student1, student2;
 
-    student1.SetName("Alice", 5);
-    student1.SetMath(9);
-    student1.SetEng(8);
-    student1.SetHis(7);
+    student1.SetName("Alex", 3);
+    student1.SetMath(5);
+    student1.SetEng(4);
+    student1.SetHis(10);
 
-    student2.SetName("Bob", 3);
+    student2.SetName("Andrei", 3);
     student2.SetMath(7);
     student2.SetEng(9);
     student2.SetHis(8);
